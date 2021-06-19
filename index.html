@@ -1,0 +1,401 @@
+<!doctype html>
+<!-- Here is a link to the code the documents this code is based on
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+This will help you get started with your code!
+-->
+
+
+<!-- source: -->
+<!-- logo from https://worldvectorlogo.com/zh/logo/blue-cross-animal-hospital -->
+<!-- doctors pictures from https://www.vectorstock.com/royalty-free-vector/a-veterinarian-with-puppy-vector-37959458 -->
+<!-- services info from https://www.acornvets.com/ -->
+<!-- services info from http://www.amc.vet/index.php -->
+
+
+
+
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <!-- Style sheet (CSS) and JavaScript scripts necessary to use JQuery as well as JQueryUI library -->
+  <!-- which is built on top of JQuery and offers additional possibilities -->
+  <!-- For example, JQuery UI has a datepicker which is popular and that we can use -->
+  <link href="https://code.jquery.com/ui/1.12.1/themes/black-tie/jquery-ui.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    
+  <!-- Your own script -->
+
+  <script src="scripts/service.js"></script>
+
+  
+  <!-- Your own additional style sheet -->
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+
+    
+  <!-- Your own script -->
+
+  <script src="scripts/service.js"></script>
+
+  
+  <!-- Your own additional style sheet -->
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+    
+
+    <title>SEG3125_lab5</title>
+</head>
+<body>
+<!--
+I store all of the page information in a container,
+Many websites will use what is called CSS grid layouts, where you will have a header, body, footer and both sides used for ads or other information
+-->
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="navbar-brand" href="#">SEG3125 Animal Hospital</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="#first"><img src="images/about us.png" alt="logo" style="width:30px;">&nbsp;About Us</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="#second"><img src="images/doctor.png" alt="logo" style="width:30px;">&nbsp;Our Physicians</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#third"><img src="images/services.png" alt="logo" style="width:30px;">&nbsp;Services</a>
+      </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#fourth"><img src="images/appointment.png" alt="logo" style="width:30px;">&nbsp;Make an appointment</a>
+      </li>       
+   </ul>
+  </div>  
+</nav>
+
+<div class = "container-lg">
+
+    <!--
+    Most websites now feature what is called a NavBar.
+    The example I give is quite simple with a logo and some text, but you can use it for many navigational patterns
+    https://getbootstrap.com/docs/5.0/components/navbar/
+    -->
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Attention: </strong>Due to COVID-19, all personnel entering the hospital must wear a mask
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <nav class="navbar bg-dark text-white p-3 my-3 ">
+        <h1><img src="images/company_logo.png" width="130" height="130"> Welcome to SEG3125 Animal Hospital</h1>
+        <div>
+            <p>Opening Hours:</p> 
+            <p>Monday - Friday:  8:00 AM - 22:00 PM</p>
+            <p>Saturday:         8:00 AM - 20:00 PM</p>
+            <p>Sunday:           Closed </p>
+            <p>Address: 75 Laurier Ave. E, Ottawa, ON K1N 6N5, Canada</p>
+            <p>Email: seg3125animalHospital@uottawa.ca</p>
+            <p>Call: 6130000000</p>
+            
+        </div>
+        
+    </nav>
+
+
+
+    <div class=" p-3 my-3 border bg-light">
+        <div id="first">
+        <center><h1 class=""> About us</h1></center>
+        <p class="p-4 my-3" style="font-size: 25px">We are a fully equipped veterinary animal hospital in Ottawa with the capability to provide a range of diagnostic, therapeutic, and surgical treatments.</p>
+        <p style="font-size: 25px; padding-left: 1.5rem">We are dedicated to providing the <strong>best</strong> care to our customers</p>
+    </div>
+
+    
+    <!-- Alerts are an easy way to grab the users attention, this page goes into more detail
+    https://getbootstrap.com/docs/5.0/components/alerts/
+    -->
+    
+    <div id="third">
+
+    <center><h1>Our Services</h1></center>
+
+    
+
+    <!--
+    Tables are one of many ways to organize information easily.
+    It is a good way to list of prices, or services in a business website
+    https://getbootstrap.com/docs/5.0/content/tables/
+    -->
+    <div class="container">
+                
+        <table class="table table-primary table-hover">
+            <thead>
+            <tr>
+                <th>Service</th>
+                <th>Description</th>
+                
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                
+                <td><p><img src="images/vaccine.png" alt="logo" style="width:40px;"></p>Regular Vaccine Services</td>
+                
+                <td>The Animal Medical Centre offers regular preventative health checks and services. Our experienced vets can provide you with advice and recommendations regarding vaccinations and general preventative health care.</td>
+                
+            </tr>
+            <tr>
+                <td><p><img src="images/surgical.png" alt="logo" style="width:40px;"></p>Surgical Procedures</td>
+                <td>The Animal Medical Centre offers a whole range of Surgical Procedures. Our 15 plus vets have a wealth of surgical interests and experience available to them. Their surgical expertise extends from soft tissue surgery, cancer surgery, through dental surgery to eye surgery and orthopaedics.</td>
+                
+            </tr>
+            <tr>
+                <td><p><img src="images/invasive.png" alt="logo" style="width:40px;"></p>Non-Invasive Services</td>
+                <td>The Animal Medical Centre offers various Non-Invasive Procedures. Many of these techniques are used for aged pets with chronic diseases, to try to make their lives more comfortable.</td>
+                
+            </tr>
+            <tr>
+                <td><p><img src="images/dentistry.png" alt="logo" style="width:40px;"></p>Dentistry</td>
+                <td>Dental disease is common in pets and your pet’s teeth need as much care and attention as your own. Regular health checks with the veterinarian will allow prompt diagnosis of dental disease. Gingivitis (inflammation of the gums) and plaque on the teeth can lead to pain, inappetance, infection and tooth loss. There is a correlation between dental disease and other more serious diseases like heart and kidney disease. We use radiography, ultrasonic de-scalers (to break down dental plaque), polishers and occasionally drills to keep your pet’s mouth fresh and more importantly, healthy.</td>
+                
+            </tr>
+            <tr>
+                <td><p><img src="images/laboratory.png" alt="logo" style="width:40px;"></p>Laboratory</td>
+                <td>We have our own well-equipped laboratory allowing us to provide you with both rapid and reliable results for testing of the blood (biochemistry, electrolytes, blood cell counts and infectious disease), skin, urine and faecal tests.
+                Sometimes, your pet may need a specific test such as analysis of a tissue for cancer. In these cases, we send them to specialized laboratories, both locally and overseas, to ensure an accurate diagnosis.</td>
+                
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    
+
+    
+
+    <h1>How did you hear about us</h1>
+
+    <!-- Button trigger modal
+    We use the same button code from above, but now we can trigger a modal to appear.
+    The bootstrap tutorial includes many different types of modals that you can explore
+    https://getbootstrap.com/docs/5.0/components/modal/
+    -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Click Here
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">How did you hear about us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Recommended by others
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Online Advertising
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cards are quite useful when building a website. They are a useful way to organize information.
+    They can be organized using a CSS grid or other layout options.
+    https://getbootstrap.com/docs/5.0/components/card/
+    -->
+
+        <div id="second">
+        <h1>Meet the Physicians!</h1>
+
+        <div class="card-columns">
+            <div class="card bg-warning" style="width:300px">
+                <img class="card-img-top" src="images/doctor1.jpg" alt="Card image" style="width:298px; height:180px">
+                <div class="card-body">
+                    <h4 class="card-title">Alice Wang</h4>
+                    <p class="card-text">Surgery specialist with ten years of experience</p>
+                    <!-- collapsible part -->
+                    <a href="#profile1" class="btn btn-primary" data-toggle="collapse">See available time</a>
+                    <div id="profile1" class="collapse p-3">
+                        <p>available on:</p>
+                        <p>Monday</p>
+                        <p>Tuesday</p>
+                        <p>Wednesday</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-danger" style="width:300px">
+                <img class="card-img-top" src="images/doctor2.jpg" alt="Card image" style="width:298px; height:180px">
+                <div class="card-body">
+                    <h4 class="card-title">Dave James</h4>
+                    <p class="card-text">Animal dentist expert with 4 years of experience</p>
+                    <!-- collapsible part -->
+                    <a href="#profile2" class="btn btn-primary" data-toggle="collapse">See available time</a>
+                    <div id="profile2" class="collapse p-3">
+                        <p>available on:</p>
+                        <p>Tuesday</p>
+                        <p>Wednesday</p> 
+                        <p>Friday</p>
+                        <p>Saturday</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-secondary " style="width:300px">
+                <img class="card-img-top" src="images/doctor3.jpg" alt="Card image" style="width:298px; height:180px">
+                <div class="card-body">
+                    <h4 class="card-title">Emma Taylor</h4>
+                    <p class="card-text">An expert in animal medicine with 12 years of experience</p>
+                    <!-- collapsible part -->
+                    <a href="#profile3" class="btn btn-primary" data-toggle="collapse">See available time</a>
+                    <div id="profile3" class="collapse p-3">
+                        <p>available on:</p>
+                        <p>Monday</p>
+                        <p>Tuesday</p>
+                        <p>Wennesday</p>
+                        <p>Thursday</p>
+                        <p>Friday</p>   
+                        <p>Saturday</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    
+<div id="fourth">
+<div class="container" id="third">
+
+<div class="container">
+        <div class="container-md p-3 my-3 border bg-warning text-white">
+            <h1>Book our service</h1>
+        </div>
+    <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseService"><p><img src="images/services.png" alt="logo" style="width:40px;"></p>Choose a service</a>
+                </div>
+                <div id="collapseService" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Here is our list of services</p>
+                        <input type="radio" name="services" value="s1">&emsp;Regular Vaccine Services<br>
+                        <input type="radio" name="services" value="s2">&emsp;Surgical Procedures<br>
+                        <input type="radio" name="services" value="s3">&emsp;Non-Invasive Services<br>
+                        <input type="radio" name="services" value="s4">&emsp;Dentistry<br>
+                        <input type="radio" name="services" value="s5">&emsp;Laboratory<br>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseService"><p><img src="images/doctor.png" alt="logo" style="width:40px;"></p>Choose your Physician</a>
+                </div>
+                <div id="collapseService" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Here is our list of Physicians</p>
+                        <input type="radio" name="services" value="s1">&emsp;Alice Wang<br>
+                        <input type="radio" name="services" value="s2">&emsp;Dave James<br>
+                        <input type="radio" name="services" value="s3">&emsp;Emma Taylor<br>
+                
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate"><p><img src="images/date.png" alt="logo" style="width:40px;"></p>Choose a date</a>
+                </div>
+                <div id="collapseDate" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>What date?</p>
+                        <!-- Bootstrap has various input components. Some examples are given here: -->
+                        <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
+                        <div class="form-group row">
+                            <label for="dateTimeInput" class="col-2 col-form-label">Date and time</label>
+                            <div class="col-10">
+                                <input class="form-control" type="datetime-local" value="2021-06-6T13:45:00" id="dateTimeInput">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo"><p><img src="images/personal.png" alt="logo" style="width:40px;"></p>Your info</a>
+                </div>
+                <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Your information so we can contact you</p>
+                        Are you:<br>
+                        <input type="radio" name="sex" value="male" required>&emsp;Male<br>
+                        <input type="radio" name="sex" value="female" required>&emsp;Female<br>
+                        <br>
+                        First name
+                        <br>
+                        <input type="text" name="First name" required placeholder="Alice">
+                        <br>
+                        Last name<br><input type="text" name="Last name" required placeholder="Wang">
+                        <br>
+                        Email Address<br><input type="text" name="Email Address" required placeholder="seg3125@uottawa.ca">
+                        <br>
+                        Phone number<br><input type="text" name="Phone number" required placeholder="000 000 0000">
+                        <br>
+
+
+                    </div>
+
+                </div>
+
+                <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo"><p><img src="images/Credit Card.png" alt="logo" style="width:40px;"></p>Payment Method</a>
+                </div>
+                <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        
+                        
+                        
+                        Credit Card&emsp; <input type="text" id="debit"  pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}"
+                        placeholder="$$$$ $$$$ $$$$ $$$$">
+            
+                        &emsp;CSV&emsp;<input type="text" name="CSV" placeholder="123" 
+                        pattern="[0-9]{3}" required>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        <br>                
+        <button type="submitButton" id="submitButton" type="button" class="block">
+                sumbit my order
+        </button>
+    </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
